@@ -7,4 +7,52 @@
   
   body {
     font-family: "Vazir", Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(180deg, #f7f9ff 0%, #f3f5fb 100%);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .app-shell {
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #e9edfb;
+    padding: 24px;
+    box-shadow: 0 10px 35px rgba(32, 40, 64, 0.08);
+  }
+
+  .app-header {
+    border-bottom: 1px dashed #e2e8f0;
+    padding-bottom: 16px;
+  }
+
+  .toolbar-shell {
+    background: #fafbff;
+    border: 1px solid #e8ecf8;
+    border-radius: 14px;
+    padding: 14px;
+  }
+
+  .task-card {
+    transition: all 0.2s ease;
+    border-radius: 12px;
+  }
+
+  .task-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(60, 75, 110, 0.09);
+  }
+
+  .empty-state {
+    border: 1px dashed #d4daef;
+    border-radius: 14px;
+    padding: 32px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: #fbfcff;
   }
